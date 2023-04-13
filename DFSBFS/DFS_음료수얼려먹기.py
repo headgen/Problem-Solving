@@ -18,8 +18,6 @@ def dfs(curr_x, curr_y):
         if 0 <= next_x < N and 0 <= next_y < M and maps[next_x][next_y] == 0:
             dfs(next_x, next_y)
         
-    
-
 
 cnt = 0
 
