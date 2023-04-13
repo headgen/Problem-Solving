@@ -2,7 +2,7 @@ from collections import deque
 
 # Input
 N, M = map(int, input().split())
-maps = [list(map(int, input().split())) for _ in range(N)]
+maps = [list(map(int, input())) for _ in range(N)]
 
 
 dx = [-1, 1, 0, 0]
@@ -10,9 +10,10 @@ dy = [0, 0, -1, 1]
 
 
 def bfs(x, y):
-    q = deque((x, y))
+    q = deque()3
+    q.append((x, y))
     
-    if maps[x][1] == 1:  # 아이스크림을 만들 수 없는 공간이거나 '이미 탐색한 곳'
+    if maps[x][y] == 1:  # 아이스크림을 만들 수 없는 공간이거나 '이미 탐색한 곳'
         return False
 
     while q:
