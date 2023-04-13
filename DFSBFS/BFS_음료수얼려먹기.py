@@ -10,7 +10,7 @@ dy = [0, 0, -1, 1]
 
 
 def bfs(x, y):
-    q = deque()3
+    q = deque()
     q.append((x, y))
     
     if maps[x][y] == 1:  # 아이스크림을 만들 수 없는 공간이거나 '이미 탐색한 곳'
