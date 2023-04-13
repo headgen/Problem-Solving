@@ -14,7 +14,6 @@ def dfs(curr_x, curr_y):
         next_x = curr_x + dx[i]
         next_y = curr_y + dy[i]
 
-    
         if 0 <= next_x < N and 0 <= next_y < M and maps[next_x][next_y] == 0:
             dfs(next_x, next_y)
         
